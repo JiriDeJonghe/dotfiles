@@ -37,3 +37,12 @@ vim.api.nvim_create_autocmd('TermClose', {
 		vim.cmd('bd!')
 	end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "c", "h", "javascriptreact", "typescriptreact" },
+	callback = function()
+		vim.bo.shiftwidth = 2
+		vim.bo.softtabstop = 2
+		vim.bo.expandtab = true
+	end,
+})

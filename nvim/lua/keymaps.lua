@@ -38,7 +38,6 @@ vim.keymap.set("n", "gD", builtin.lsp_definitions, { desc = "[G]oto [D]eclaratio
 vim.keymap.set("n", "gr", builtin.lsp_references, { desc = "[G]oto [R]eferences" })
 vim.keymap.set("n", "gI", builtin.lsp_implementations, { desc = "[G]oto [I]mplementation" })
 
-
 -- Quickfix List
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")

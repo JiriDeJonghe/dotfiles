@@ -16,7 +16,17 @@ return {
 		servers = {
 			clangd = {},
 			lua_ls = {},
-			pyright = {}
+			pyright = {
+				settings = {
+					python = {
+						analysis = {
+							typeCheckingMode = "strict",
+						}
+					}
+				}
+			},
+			tsserver = {},
+			html = {}
 		},
 	},
 

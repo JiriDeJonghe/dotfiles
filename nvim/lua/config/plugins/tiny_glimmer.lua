@@ -17,7 +17,22 @@ return {
 						from_color = "#c84865",
 						to_color = "DiffAdd",
 					},
+					reverse_fade = {
+						from_color = "#c84865",
+						to_color = "DiffAdd",
+					},
 				},
+				overwrite = {
+					auto_map = true,
+					search = {
+						enabled = true,
+						default_animation = "fade",
+					},
+					paste = {
+						enabled = true,
+						default_animation = "reverse_fade",
+					}
+				}
 			})
 		end
 	}
