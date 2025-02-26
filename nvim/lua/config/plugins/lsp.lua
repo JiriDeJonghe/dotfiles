@@ -26,7 +26,23 @@ return {
 				}
 			},
 			tsserver = {},
-			html = {}
+			html = {},
+			gopls = {
+				cmd = { "gopls" },
+				settings = {
+					gopls = {
+						analyses = {
+							unusedparams = true,
+							shadow = true,
+							unusedwrite = true,
+							useany = true,
+							undeclaredname = true,
+							fillstruct = true,
+						},
+
+					}
+				}
+			}
 		},
 	},
 

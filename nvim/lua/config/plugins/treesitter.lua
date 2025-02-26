@@ -7,8 +7,44 @@ return {
 		},
 		config = function()
 			require 'nvim-treesitter.configs'.setup {
-				-- A list of parser names, or "all" (the listed parsers MUST always be installed)
-				ensure_installed = { "bash", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "diff", "html", "python", "latex", "javascript", "typescript", "tsx", "css" },
+				ensure_installed = {
+
+					-- Vim
+					"lua",
+					"vim",
+					"vimdoc",
+
+					-- Standard
+					"c",
+					"bash",
+					"python",
+
+					-- Web dev
+					"html",
+					"javascript",
+					"typescript",
+					"css",
+
+					-- Go
+					"go",
+					"gomod",
+					"gowork",
+					"gosum",
+
+					-- Notetaking
+					"markdown",
+					"markdown_inline",
+					"latex",
+
+					-- Others
+					"json",
+					"yaml",
+					"toml",
+					"regex",
+					"dockerfile",
+					"git_rebase",
+					"gitignore",
+				},
 
 				-- Install parsers synchronously (only applied to `ensure_installed`)
 				sync_install = false,
