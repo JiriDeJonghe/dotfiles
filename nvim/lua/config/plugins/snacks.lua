@@ -12,7 +12,9 @@ return {
 				enabled = true,
 				style = "compact",
 			},
-			dim = { enabled = true }
+			indent = { enabled = true },
+			scroll = { enabled = true }
+
 		},
 		keys = {
 			{ "<space>z", function() Snacks.zen() end, { desc = "Toggle [Z]en Mode" } }
