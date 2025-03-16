@@ -30,6 +30,7 @@ return {
 					"gomod",
 					"gowork",
 					"gosum",
+					"templ",
 
 					-- Notetaking
 					"markdown",
