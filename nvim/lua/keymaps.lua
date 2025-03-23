@@ -46,6 +46,10 @@ map("n", "<leader>sg", picker.grep, { desc = "[S]earch [G]rep" })
 map({ "n", "v" }, "<leader>sw", picker.grep_word, { desc = "[S]earch [W]ord under cursor" })
 map("n", "<leader>sf", picker.files, { desc = "[S]earch [F]iles" })
 
+-- TODO
+map("n", "<leader>nt", function() require("todo-comments").jump_next() end, { desc = "[N]ext [T]ODO" })
+map("n", "<leader>pt", function() require("todo-comments").jump_prev() end, { desc = "[P]revious [T]ODO" })
+
 -- Quickfix List
 map("n", "<M-j>", "<cmd>cnext<CR>")
 map("n", "<M-k>", "<cmd>cprev<CR>")
