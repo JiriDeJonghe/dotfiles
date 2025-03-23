@@ -14,7 +14,7 @@ return {
 			indent = { enabled = true },
 			scroll = { enabled = true },
 			statuscolumn = { enabled = true },
-
+			picker = {},
 		},
 		keys = {
 			{ "<space>z", function() Snacks.zen() end, { desc = "Toggle [Z]en Mode" } }

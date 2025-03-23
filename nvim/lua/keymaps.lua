@@ -32,7 +32,6 @@ map("n", "<leader>ep", function()
 	}
 end)
 local multigrep = require("config.telescope.multigrep")
-map('n', "<space>sg", multigrep.live_multigrep, { desc = "[S]earch [G]rep" })
 
 
 map("n", "gd", builtin.lsp_definitions, { desc = "[G]oto [D]efinition" })
@@ -40,6 +39,12 @@ map("n", "gD", builtin.lsp_definitions, { desc = "[G]oto [D]eclaration" })
 map("n", "gr", builtin.lsp_references, { desc = "[G]oto [R]eferences" })
 map("n", "gI", builtin.lsp_implementations, { desc = "[G]oto [I]mplementation" })
 map("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[R]ename [S]ymbol" })
+
+-- Snacks Picker
+local picker = Snacks.picker
+map("n", "<leader>sg", picker.grep, { desc = "[S]earch [G]rep" })
+map({ "n", "v" }, "<leader>sw", picker.grep_word, { desc = "[S]earch [W]ord under cursor" })
+map("n", "<leader>sf", picker.files, { desc = "[S]earch [F]iles" })
 
 -- Quickfix List
 map("n", "<M-j>", "<cmd>cnext<CR>")

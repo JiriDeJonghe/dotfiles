@@ -21,9 +21,8 @@ return {
 
 					-- Web dev
 					"html",
-					"javascript",
-					"typescript",
 					"css",
+					"templ",
 
 					-- Go
 					"go",

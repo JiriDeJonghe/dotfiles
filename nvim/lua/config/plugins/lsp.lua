@@ -15,7 +15,9 @@ return {
 	opts = {
 		servers = {
 			clangd = {},
-			lua_ls = {},
+			lua_ls = {
+				cmd = { "lua_ls"}
+			},
 			pyright = {
 				settings = {
 					python = {
@@ -25,7 +27,6 @@ return {
 					}
 				}
 			},
-			tsserver = {},
 			html = {},
 			gopls = {
 				cmd = { "gopls" },
