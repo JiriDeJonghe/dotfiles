@@ -5,7 +5,7 @@ return {
 		opts = {},
 		config = function()
 			require('tiny-glimmer').setup({
-				enabled = false,
+				enabled = true,
 				default_animation = "pulse",
 				refresh_interval_ms = 6,
 				animations = {

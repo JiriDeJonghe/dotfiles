@@ -24,7 +24,9 @@ require("lazy").setup({
 		{
 			"folke/tokyonight.nvim",
 			config = function()
-				vim.cmd.colorscheme("tokyonight")
+				vim.cmd.colorscheme("tokyonight-storm")
+				vim.cmd("highlight Normal ctermbg=none guibg=none")
+				vim.cmd("highlight NonText ctermbg=none guibg=none")
 			end,
 		},
 		{ import = "config.plugins" },
