@@ -39,5 +39,4 @@ vim.opt.mouse = "a"
 vim.opt.signcolumn = "auto"
 vim.opt.termguicolors = true
 vim.opt.fileencoding = "utf-8"
-vim.cmd("highlight Normal ctermbg=none guibg=none")
-vim.cmd("highlight NonText ctermbg=none guibg=none")
+vim.opt.fillchars:append({eob = " "})

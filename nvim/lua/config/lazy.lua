@@ -23,10 +23,13 @@ require("lazy").setup({
 		-- import your plugins
 		{
 			"folke/tokyonight.nvim",
-			config = function()
-				vim.cmd.colorscheme("tokyonight-storm")
-				vim.cmd("highlight Normal ctermbg=none guibg=none")
-				vim.cmd("highlight NonText ctermbg=none guibg=none")
+			lazy=false,
+			opts= {
+				transparent=true,
+			},
+			config= function(_, opts)
+				require("tokyonight").setup(opts)
+				vim.cmd.colorscheme("tokyonight-moon")
 			end,
 		},
 		{ import = "config.plugins" },
