@@ -50,6 +50,13 @@ map("n", "<leader>sf", picker.files, { desc = "[S]earch [F]iles" })
 map("n", "<leader>nt", function() require("todo-comments").jump_next() end, { desc = "[N]ext [T]ODO" })
 map("n", "<leader>pt", function() require("todo-comments").jump_prev() end, { desc = "[P]revious [T]ODO" })
 
+-- Obsidian
+map('n', "<leader>on", '<cmd>ObsidianNewFromTemplate<cr>', { desc = "[O]bsidian [N]ew" })
+map('n', "<leader>od", '<cmd>ObsidianToday<cr>', { desc = "[O]bsidian [D]aily" })
+map('n', "<leader>os", '<cmd>ObsidianSearch<cr>', { desc = "[O]bsidian [S]earch" })
+map('n', "<leader>ot", '<cmd>ObsidianTemplate<cr>', { desc = "[O]bsidian [T]emplate" })
+map('n', "<leader>ob", '<cmd>ObsidianBacklinks<cr>', { desc = "[O]bsidian [B]acklinks" })
+
 -- Quickfix List
 map("n", "<M-j>", "<cmd>cnext<CR>")
 map("n", "<M-k>", "<cmd>cprev<CR>")
